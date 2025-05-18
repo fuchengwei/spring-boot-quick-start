@@ -20,6 +20,9 @@ public class Role extends Auditing {
     @Column(unique = true, nullable = false)
     private String name;
 
+    @Column(unique = true, nullable = false)
+    private String code;
+
     private String description;
 
     private Boolean enabled = true;
