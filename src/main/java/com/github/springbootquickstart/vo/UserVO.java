@@ -1,12 +1,13 @@
 package com.github.springbootquickstart.vo;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
-import java.time.LocalDateTime;
 import java.util.Set;
 
 @Data
-public class UserVO {
+@EqualsAndHashCode(callSuper = true)
+public class UserVO extends BaseVO {
     private Long id;
 
     private String username;
@@ -18,8 +19,4 @@ public class UserVO {
     private Boolean enabled;
 
     private Set<RoleVO> roles;
-
-    private LocalDateTime createdDate;
-
-    private LocalDateTime lastModifiedDate;
 }
