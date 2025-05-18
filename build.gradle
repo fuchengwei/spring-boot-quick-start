@@ -40,7 +40,6 @@ dependencies {
 
     // 缓存相关
     implementation 'org.springframework.boot:spring-boot-starter-cache'
-    implementation 'net.sf.ehcache:ehcache'
 
     // 工具类
     implementation 'cn.hutool:hutool-all:5.8.26'
