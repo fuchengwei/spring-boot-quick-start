@@ -22,6 +22,8 @@ public class Role extends Auditing {
 
     private String description;
 
+    private Boolean enabled = true;
+
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "sys_role_permission", joinColumns = @JoinColumn(name = "role_id"), inverseJoinColumns =
     @JoinColumn(name = "permission_id"))

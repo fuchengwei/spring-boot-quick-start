@@ -14,5 +14,7 @@ public class RoleDTO {
 
     private String description;
 
+    private Boolean enabled;
+
     private Set<Long> permissionIds;
 } 

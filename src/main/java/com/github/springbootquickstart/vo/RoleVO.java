@@ -14,5 +14,7 @@ public class RoleVO extends BaseVO {
 
     private String description;
 
+    private Boolean enabled;
+
     private Set<PermissionVO> permissions;
 } 
