@@ -18,7 +18,7 @@ public class JpaConfig {
         return () -> {
             Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
             if (authentication == null || !authentication.isAuthenticated()) {
-                return Optional.of("system");
+                return Optional.empty();
             }
             return Optional.of(authentication.getName());
         };
